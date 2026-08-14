@@ -1,7 +1,7 @@
 ## Hi there 👋
 
 <!--
-**niaopian/niaopian** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**haotzops/haotzops** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![](https://raw.githubusercontent.com/niaopian/niaopian/refs/heads/output/github-contribution-grid-snake.svg)
+![](https://raw.githubusercontent.com/haotzops/haotzops/output/github-contribution-grid-snake.svg)
 
 <!--START_SECTION:waka-->
 

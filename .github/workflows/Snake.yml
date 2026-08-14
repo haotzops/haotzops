@@ -8,10 +8,10 @@ on:
   # 允许手动触发执行
   workflow_dispatch:
 
-  # 每当push到master分支时自动执行
+  # 每当push到main分支时自动执行
   push:
     branches:
-    - master
+    - main
 
 
 
