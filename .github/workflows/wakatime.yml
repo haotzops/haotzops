@@ -17,9 +17,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Trust Wakapi internal CA
         run: |
-          echo "REQUESTS_CA_BUNDLE=$GITHUB_WORKSPACE/.github/certs/wakapi-root.crt" >> "$GITHUB_ENV"
-          echo "SSL_CERT_FILE=$GITHUB_WORKSPACE/.github/certs/wakapi-root.crt" >> "$GITHUB_ENV"
-          echo "CURL_CA_BUNDLE=$GITHUB_WORKSPACE/.github/certs/wakapi-root.crt" >> "$GITHUB_ENV"
+          # 合并系统 CA 与仓库内 Caddy 根证书（REQUESTS_CA_BUNDLE 是替换而非追加，必须保留公共 CA）
+          cat /etc/ssl/certs/ca-certificates.crt .github/certs/wakapi-root.crt > /tmp/ca-bundle.crt
+          echo "REQUESTS_CA_BUNDLE=/tmp/ca-bundle.crt" >> "$GITHUB_ENV"
+          echo "SSL_CERT_FILE=/tmp/ca-bundle.crt" >> "$GITHUB_ENV"
+          echo "CURL_CA_BUNDLE=/tmp/ca-bundle.crt" >> "$GITHUB_ENV"
         # this action name
       - uses: athul/waka-readme@master # do NOT replace with anything else
         with:
