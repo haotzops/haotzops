@@ -21,4 +21,13 @@
 
 <!--START_SECTION:waka-->
 
+```markdown
+From: 07 August 2026 - To: 14 August 2026
+
+Total Time: 0 hrs 0 mins
+
+YAML   0 hrs 0 mins          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   00.00 %
+Go     0 hrs 0 mins          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   00.00 %
+```
+
 <!--END_SECTION:waka-->
